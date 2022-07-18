@@ -33,7 +33,7 @@ try:
 
             face_path,tmp_dir,theta = face_extract(image_path,filename)
             print("face_path_retutn main line 35:",face_path)
-            if image_path == '':
+            if (face_path =='') or (face_path is None) :
                 pass
             else:
                 final_orientation = lion_orientation_fun(face_path)

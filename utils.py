@@ -128,7 +128,7 @@ def extract_lion_data(face_cords, lion, pil_img, coordinates, tmp_dir, temp_imag
     theta=0
 
     for face_coord in face_cords[lion]['boxes']:
-        if face_coord["conf"] > 0.8:
+        if face_coord["conf"] > 0.7:
             _coordinates = []
             face = pil_img.copy()
             nose = pil_img.copy()
